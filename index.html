@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyad Abuthahir | Full-Stack Developer & Software Engineer Portfolio</title>
+    <meta name="description" content="Personal career portfolio of Seyad Abuthahir, BSc Computer Science graduate and MCA student. Built with a sleek Spider-Man Red and Black theme featuring Skills, Projects, Activities, and Contact.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕷️</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-spidey-dark">
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="main-navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" id="logo-link" aria-label="Go to top">
+                <!-- Inline SVG Spidey Logo -->
+                <svg class="spider-svg" viewBox="0 0 100 100" fill="currentColor">
+                    <path d="M50,15 C52,15 54,20 54,25 C54,30 50,32 50,32 C50,32 46,30 46,25 C46,20 48,15 50,15 Z" />
+                    <ellipse cx="50" cy="38" rx="7" ry="8" />
+                    <ellipse cx="50" cy="58" rx="11" ry="16" />
+                    <!-- Left legs -->
+                    <path d="M46,36 C35,28 20,28 12,38 C20,34 35,34 44,40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M44,42 C30,36 14,40 8,54 C14,46 30,42 42,47" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M42,50 C28,52 12,62 8,78 C14,68 28,60 41,57" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M43,62 C32,70 20,84 18,94 C22,84 34,74 44,67" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <!-- Right legs -->
+                    <path d="M54,36 C65,28 80,28 88,38 C80,34 65,34 56,40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M56,42 C70,36 86,40 92,54 C86,46 70,42 58,47" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M58,50 C72,52 88,62 92,78 C86,68 72,60 59,57" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M57,62 C68,70 80,84 82,94 C78,84 66,74 56,67" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                </svg>
+                <span class="logo-name">SEYAD <span class="highlight">ABUTHAHIR</span></span>
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="nav-links-desktop" aria-label="Desktop Navigation">
+                <a href="#home" class="nav-item active" id="nav-home">Home</a>
+                <a href="#skills" class="nav-item" id="nav-skills">Skills</a>
+                <a href="#projects" class="nav-item" id="nav-projects">Projects</a>
+                <a href="#activities" class="nav-item" id="nav-activities">Activities</a>
+                <a href="#contact" class="nav-item" id="nav-contact">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-drawer">
+        <nav class="nav-links-mobile" aria-label="Mobile Navigation">
+            <a href="#home" class="mobile-nav-item active" id="mob-home">Home</a>
+            <a href="#skills" class="mobile-nav-item" id="mob-skills">Skills</a>
+            <a href="#projects" class="mobile-nav-item" id="mob-projects">Projects</a>
+            <a href="#activities" class="mobile-nav-item" id="mob-activities">Activities</a>
+            <a href="#contact" class="mobile-nav-item" id="mob-contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="home-glow"></div>
+            <div class="container home-container">
+                <div class="home-content">
+                    <div class="spidey-badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">STATUS: SEEKING OPPORTUNITIES & SLINGING CODE</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Seyad Abuthahir</span>
+                    </h1>
+                    <h2 class="role-title">
+                        I am a <span id="typewriter-text" class="accent">Full-Stack Web Developer</span><span class="cursor-blink">|</span>
+                    </h2>
+                    <p class="hero-bio">
+                        As a <strong class="white-text">BSc Computer Science graduate</strong> currently pursuing my <strong class="white-text">MCA degree</strong>, I combine fundamental computational principles with advanced software application practices. My mission is to craft clean, fast, and highly interactive software that solves real-world challenges.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+                            <span class="btn-text">View My Missions</span>
+                            <span class="btn-icon">🕸️</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-send-signal">Send Spidey-Signal</a>
+                    </div>
+                </div>
+
+                <!-- Hologram HUD Visualizer (Minimal / Performant) -->
+                <div class="home-visual">
+                    <div class="hud-frame">
+                        <div class="hud-scanline"></div>
+                        <div class="hud-header">
+                            <span class="hud-tag">IDENTITY: VERIFIED</span>
+                            <span class="hud-percent">100%</span>
+                        </div>
+                        <div class="hud-graphic">
+                            <!-- Profile Photo, styled into the HUD theme -->
+                            <div class="hud-photo-wrap">
+                                <svg class="hud-photo-ring" viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="47" stroke="currentColor" stroke-dasharray="2 4" stroke-width="0.6" opacity="0.35"/>
+                                </svg>
+                                <img src="profile.jpg" alt="Seyad Abuthahir" class="hud-photo">
+                            </div>
+                        </div>
+                        <div class="hud-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">COGNITIVE LEVEL</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">LOGICAL REFLEXES</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">THE WEB OF SKILLS</h2>
+                    <p class="section-subtitle">A solid computer science foundation combined with modern full-stack web technologies</p>
+                    <div class="web-divider">🕸️</div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Web Development -->
+                    <div class="skill-card hover-glow" id="card-web-dev">
+                        <div class="skill-header">
+                            <span class="skill-icon">🌐</span>
+                            <h3 class="skill-title">Web Development</h3>
+                        </div>
+                        <p class="skill-desc">Building responsive, semantic, and interactive layouts using classic client/server architecture.</p>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Programming Languages -->
+                    <div class="skill-card hover-glow" id="card-languages">
+                        <div class="skill-header">
+                            <span class="skill-icon">💻</span>
+                            <h3 class="skill-title">Systems & Languages</h3>
+                        </div>
+                        <p class="skill-desc">Solid grounding in object-oriented programming, data structures, and scripting tools.</p>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Databases & Foundations -->
+                    <div class="skill-card hover-glow" id="card-databases">
+                        <div class="skill-header">
+                            <span class="skill-icon">🗄️</span>
+                            <h3 class="skill-title">Database & Foundations</h3>
+                        </div>
+                        <p class="skill-desc">Structured query design, schema modeling, and relational database management.</p>
+                        <div class="skills-list">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">DBMS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">MISSION LOG (PROJECTS)</h2>
+                    <p class="section-subtitle">Recent projects slung together using my web and programming expertise</p>
+                    <div class="web-divider">🕸️</div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-banner bg-web-stack">
+                            <div class="project-hud-overlay">
+                                <span>HTML // SQL // PHP // CSS</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">WEB APPLICATION</span>
+                            <h3 class="project-name">Dynamic Web Portal & Database</h3>
+                            <p class="project-text">
+                                A responsive full-stack website for entertaintment website integrating a SQL backend with a dynamic PHP interface. Incorporates secure user inputs and authentication, session management, and responsive front-end dashboard panels.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="proj-link" id="proj1-github">GitHub Repository 📁</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-banner bg-python-script">
+                            <div class="project-hud-overlay">
+                                <span>PYTHON // SCRAPING // DATA</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">SYSTEM AUTOMATION</span>
+                            <h3 class="project-name">Python Automated Scraper</h3>
+                            <p class="project-text">
+                                An optimized Python script designed to crawl structured resources, parse payloads, and export normalized datasets. Features clean error handling and concurrency.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="proj-link" id="proj2-github">GitHub Repository 📁</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-banner bg-oop-app">
+                            <div class="project-hud-overlay">
+                                <span>JAVA // SWING // OOP</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">DESKTOP SOFTWARE</span>
+                            <h3 class="project-name">Java OOP Application System</h3>
+                            <p class="project-text">
+                                A desktop application utilizing Java Swing UI component modeling and core object-oriented structures. Connects to database engines for persistence.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="proj-link" id="proj3-github">GitHub Repository 📁</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="activities-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">PERSONAL ACTIVITIES</h2>
+                    <p class="section-subtitle">Academic highlights, co-curricular achievements and extra non-curricular activities</p>
+                    <div class="web-divider">🕸️</div>
+                </div>
+
+                <div class="activities-timeline">
+                    <!-- Activity 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="activity-date">Currently Pursuing</span>
+                            <h3 class="activity-title">Master of Computer Applications (MCA)</h3>
+                            <p class="activity-details">
+                                Expanding technical depth in database systems, software engineering concepts, mobile application development, and systems architectures.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Activity 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="activity-date">Graduated</span>
+                            <h3 class="activity-title">BSc Computer Science Graduate</h3>
+                            <p class="activity-details">
+                                Established deep foundational knowledge in data structures, compiler design, assembly languages, and standard database query designs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Activity 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="activity-date">Academic Related Course Completion</span>
+                            <h3 class="activity-title">Full stack Development Certification - NoviTech</h3>
+                            <p class="activity-details">
+                                A 30 days full stack certification course provided by NoviTech.By the completion of this course, I have a deep understanding of Frontend & Backend integration with database.
+                            </p><br>
+                            <h3 class="activity-title">AI Fundamentals Certification - IBM</h3>
+                            <p class="activity-details">
+                                Acquired a foundational understanding of core artificial intelligence principles, machine learning concepts, and modern AI technologies. Developed a strong technical grounding in building future-ready skills and understanding industry-standard frameworks driven by IBM.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">THE SPIDEY-SIGNAL</h2>
+                    <p class="section-subtitle">Have a mission or software project? Shoot a beacon directly to my HUD!</p>
+                    <div class="web-divider">🕸️</div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-hud-panel">
+                        <div class="hud-terminal-header">
+                            <span class="term-status">SIGNAL STATE: OPEN</span>
+                            <span class="term-freq">19.62 MHz</span>
+                        </div>
+                        <div class="terminal-pulse-area">
+                            <div class="terminal-pulse"></div>
+                            <span class="terminal-lbl">WAITING FOR BEACON...</span>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="spidey-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Citizen Name / Organization</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="Gwen Stacy or Stark Tech" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Communication Link (Email)</label>
+                                <input type="email" id="contact-email" name="email" required placeholder="gwen@webshooters.net" class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Distress Level / Subject</label>
+                            <input type="text" id="contact-subject" name="subject" required placeholder="URGENT: Software Mission" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Signal Details (Message)</label>
+                            <textarea id="contact-message" name="message" required rows="5" placeholder="Dear Seyad, I have a web emergency that needs your skills..." class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">
+                            <span class="btn-text">SHOOT SIGNAL</span>
+                            <span class="btn-icon">🕸️</span>
+                        </button>
+                    </form>
+
+                    <div class="contact-success-msg" id="success-message">
+                        <span class="success-icon">🕷️</span>
+                        <h4 class="success-title">SIGNAL BEACON DETECTED!</h4>
+                        <p>Seyad Abuthahir has received your message on his HUD and will respond shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="footer-text">© 2026 Developed with great responsibility by Seyad Abuthahir.</p>
+            <p class="footer-subtext">This is a Spider-Man themed personal career portfolio conceptual design.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
